@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //DONT WORKS IN NODE JS COZ IT IS A BROWSER FUNCTION
+        let num = prompt("Enter any number");//use to take input from user in browser
+        num = Number.parseInt(num);
+        //Number.parseInt() can retyrn NaN value too if the number is not valid
+        //Converts float/double to int but string type is not valid and would return NaN
+        if (num) {
+            console.log('User input taken succesfully ,INT/FLOAT/DOUBLE');
+            if (confirm('Your input is correct data-type,you want to print it?')) {
+                console.log(num);
+            }
+            else {
+                console.log('You choose not to print');
+            }
+        }
+        else {
+            console.log("User input is String/Character or Boolean");
+            console.log(num);
+        }
+
+    </script>
+</head>
+
+<body>
+    <!--prompt() and confirm() learnt in this-->
+    <script src="dom.js"></script>
+</body>
+
+</html>

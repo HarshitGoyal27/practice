@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 2</title>
+</head>
+
+<body>
+    <!--htmlCollcetion vs Nodelist-->
+    <!--Enter and spae is also a text node-->
+    <!--htmlCollection:=>only element node wheras nodeList all types of nodes-->
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <script>
+        let htmlcoll = document.querySelector('ul').children;
+        let nodecoll = document.querySelector('ul').childNodes;
+        console.log(htmlcoll);
+        console.log(nodecoll);
+//THEY BOTH WOULD GIVE SAME OUTPUT COZ getelebyTAGNAME RETURNS WHOLE ELEMENT NODE
+// let htmlcollection=document.getElementsByTagName('li');
+// let nodelist=document.querySelectorAll('li');
+    </script>
+</body>
+
+</html>
